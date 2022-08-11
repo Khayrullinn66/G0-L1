@@ -7,6 +7,9 @@ import (
 	"time"
 )
 
+/*Реализовать все возможные способы остановки выполнения горутины.
+ */
+
 func CloseChan(ch <-chan int, jr *sync.WaitGroup) {
 	for i := range ch {
 		fmt.Print(i, " ")
